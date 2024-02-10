@@ -26,6 +26,8 @@
     "serve": "^14.2.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
-    "vite-plugin-pwa": "^0.18.0"
+    "vite-plugin-pwa": "^0.18.0",
+    "workbox-build": "^7.0.0",
+    "workbox-window": "^7.0.0"
   }
 }
