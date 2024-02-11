@@ -1,7 +1,32 @@
-import React from "react";
+import NavbarDesktop from "./components/Navbar/NavbarDesktop";
+import UIContainer from "./components/Container/UIContainer";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Technologies from "./sections/Technologies";
+// import Projects from "./sections/Projects";
+import Footer from "./components/Footer";
 
 function App() {
-  return <></>;
+  const pages = [
+    <About />, 
+    <Experience />, 
+    <Technologies />, 
+    // <Projects />
+  ];
+
+  return (
+    <>
+      <NavbarDesktop />
+      <UIContainer>
+        {pages.map((page, index) => (
+          <div key={index}>
+            <div className="mb-5">{page}</div>
+          </div>
+        ))}
+      </UIContainer>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
