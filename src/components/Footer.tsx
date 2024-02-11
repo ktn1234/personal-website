@@ -17,7 +17,7 @@ function Footer(): JSX.Element {
                 <a href="https://tailwindcss.com/">Tailwind CSS</a>
               </span>
             </p>
-            <p className="text-tertiary ">
+            <p className="text-tertiary text-center">
               Made with ❤️ by Kevin Nguyen | 2024
             </p>
           </div>
