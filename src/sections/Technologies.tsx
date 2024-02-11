@@ -44,11 +44,8 @@ const techDomains: TechDomain[] = [
 
 function Technologies(): JSX.Element {
   return (
-    <div>
-      <h1
-        id="technologies"
-        className="text-3xl text-center drop-shadow-tertiary-glow"
-      >
+    <section id="technologies">
+      <h1 className="text-3xl text-center drop-shadow-tertiary-glow">
         Technologies
       </h1>
       <div className="flex flex-wrap justify-between pt-5">
@@ -68,7 +65,7 @@ function Technologies(): JSX.Element {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

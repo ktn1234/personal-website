@@ -94,7 +94,7 @@ const jobs: Job[] = [
 
 function Experience(): JSX.Element {
   return (
-    <div id="experience">
+    <section id="experience">
       <h1 className="text-3xl drop-shadow-tertiary-glow">Experience</h1>
       <div>
         {jobs.map((job: Job, index: number) => (
@@ -124,7 +124,7 @@ function Experience(): JSX.Element {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
