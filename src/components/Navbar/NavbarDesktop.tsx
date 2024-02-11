@@ -25,14 +25,14 @@ function NavbarDesktop(): JSX.Element {
 
   return (
     <header>
-      <nav className="pl-8 pr-8 pt-5 flex justify-between items-center">
+      <nav className="px-5 pt-5 md:flex md:justify-between md:items-center">
         <div>
           <span className="cursor-pointer">
             <p className="text-xl inline"> {"> kevdev"}</p>
           </span>
         </div>
         <div>
-          <ul className="flex">
+          <ul className="flex invisible md:visible">
             {links.map((link: Link, index: number) => (
               <li className="pl-5" key={index}>
                 <a href={link.url}>{link.title}</a>
