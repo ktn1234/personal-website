@@ -18,7 +18,7 @@ const techDomains: TechDomain[] = [
   },
   {
     name: "Web Frameworks",
-    tech: ["React", "Vue", "Next.js", "Express.js"],
+    tech: ["React", "Vue.js", "Next.js", "Express.js"],
   },
   {
     name: "Web",

@@ -13,7 +13,7 @@ const jobs: Job[] = [
   {
     company: "Viasat",
     title: "Software Engineer",
-    time: "August 2021 - Present",
+    time: "August 2020 - Present",
     description: [
       "Lead the development of a portal and an API for DDI (DNS, DHCP, and IPAM) services to provide a self-service interface for internal employees to manage their own domains and IP addresses",
       "Built an internal self-service client for Viasat's Configuration Management Database (CMDB) to provide a more efficient way to manage assets",
@@ -34,12 +34,14 @@ const jobs: Job[] = [
       "Kubernetes",
       "Typescript",
       "Node.js",
+      "REST",
       "Html",
       "CSS",
       "Javascript",
       "Vue.js",
       "Github Actions",
       "Go",
+      "gRPC",
       "React",
       "Azure",
     ],
@@ -47,7 +49,7 @@ const jobs: Job[] = [
   {
     company: "Bitsurf",
     title: "Co-Founder Software Engineer",
-    time: "May 2018 - August 2018",
+    time: "December 2020 - Present",
     description: [
       "Led the development of Bitsurf's platform and the backend systems to support it - Authentication, OAuth2.0, API, Database, Email integration, Payment integration, SEO, Logging, Monitoring, Alerts, and Security",
       "Architected and maintained the infrastructure for Bitsurf's platform",
@@ -73,7 +75,7 @@ const jobs: Job[] = [
   {
     company: "Ibble",
     title: "Software Engineer Intern",
-    time: "May 2019 - August 2019",
+    time: "Dec 2019 - July 2020",
     description: [
       "Built ibble's underlying push notification delivery service foundation to provide more user engagement with ibbl's mobile application",
       "Worked on reporting automation in order to get user statistics to further analyze how users were interacting with ibble's mobile application",
@@ -86,7 +88,7 @@ const jobs: Job[] = [
   {
     company: "Q2",
     title: "IT Intern",
-    time: "May 2020 - August 2020",
+    time: "May 2019 - August 2019",
     description: [
       "Automated the provisioning process for new Windows machines, reducing the steps it took from 65 to 20 steps, with Powershell",
       "Automated the provisioning process for new Mac machines, reducing the steps it took from 37 to 14 steps, with shell scripting",
