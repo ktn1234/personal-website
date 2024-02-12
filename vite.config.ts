@@ -17,8 +17,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
           id: "kevdev-personal-website",
           short_name: "KevDev",
           name: "KevDev",
-          description:
-            "Kevin Nguyen - Driving Efficiency through Automated Innovation",
+          description: "Kevin Nguyen - Driving Innovation through Automation",
           icons: [
             {
               src: "assets/manifest-icon-192.maskable.png",
