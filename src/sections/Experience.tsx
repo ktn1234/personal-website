@@ -16,6 +16,7 @@ const jobs: Job[] = [
     time: "August 2021 - Present",
     description: [
       "Lead the development of a portal and an API for DDI (DNS, DHCP, and IPAM) services to provide a self-service interface for internal employees to manage their own domains and IP addresses",
+      "Assisted in the development of an internal ChatGPT chatbot and the backend services to help assist internal employees with their job tasks",
       "Assisted with integrating DevOps practices into the development lifecycle, including automation for deployment of infrastructure resources, improving CI/CD pipelines, and providing support for internal employees",
       "Built an internal self-service client for Viasat's Configuration Management Database (CMDB) to provide a more efficient way to manage assets",
       "Optimized image pipelines that produced secure internal images for Viasat's infrastructure",
@@ -33,9 +34,13 @@ const jobs: Job[] = [
       "Kubernetes",
       "Typescript",
       "Node.js",
+      "Html",
+      "CSS",
+      "Javascript",
       "Vue.js",
       "Github Actions",
       "Go",
+      "React",
       "Azure",
     ],
   },
@@ -101,7 +106,7 @@ function Experience(): JSX.Element {
           <div key={index} className="pt-5">
             <h3 className="text-2xl">
               {job.title} at{" "}
-              <span className="font-bold drop-shadow-tertiary-glow">
+              <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-quaternary hover:animate-pulse">
                 <a href={job.link}>{job.company}</a>
               </span>
             </h3>
