@@ -1,4 +1,4 @@
-import NavbarDesktop from "./components/Navbar/NavbarDesktop";
+import NavbarDesktop from "./components/Navbar";
 import UIContainer from "./components/Container/UIContainer";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -8,9 +8,9 @@ import Footer from "./components/Footer";
 
 function App() {
   const pages = [
-    <About />, 
-    <Experience />, 
-    <Technologies />, 
+    <About />,
+    <Experience />,
+    <Technologies />,
     // <Projects />
   ];
 
