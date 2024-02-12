@@ -24,7 +24,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/kevin-t-nguyen/",
+    url: "https://www.linkedin.com/in/kevinnguyen1234/",
     icon: (
       <FaLinkedinIn
         className="hover:animate-pulse hover:fill-quaternary hover:drop-shadow-quaternary-glow"
