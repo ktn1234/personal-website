@@ -13,22 +13,50 @@ const socialLinks: SocialLink[] = [
   {
     title: "Github",
     url: "https://github.com/ktn1234",
-    icon: <FaGithub color="#3AD305" cursor="pointer" size={22} />,
+    icon: (
+      <FaGithub
+        className="hover:animate-pulse hover:fill-quaternary hover:drop-shadow-quaternary-glow"
+        color="#3AD305"
+        cursor="pointer"
+        size={22}
+      />
+    ),
   },
   {
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/kevin-t-nguyen/",
-    icon: <FaLinkedinIn color="#3AD305" cursor="pointer" size={22} />,
+    icon: (
+      <FaLinkedinIn
+        className="hover:animate-pulse hover:fill-quaternary hover:drop-shadow-quaternary-glow"
+        color="#3AD305"
+        cursor="pointer"
+        size={22}
+      />
+    ),
   },
   {
     title: "Email",
     url: "mailto:ktn1234@yahoo.com",
-    icon: <HiOutlineMail color="#3AD305" cursor="pointer" size={22} />,
+    icon: (
+      <HiOutlineMail
+        className="hover:animate-pulse hover:fill-quaternary hover:drop-shadow-quaternary-glow"
+        color="#3AD305"
+        cursor="pointer"
+        size={22}
+      />
+    ),
   },
   {
     title: "Resume",
     url: "https://drive.google.com/file/d/1qRxhm3iu8-s4G1b3-USHA8lGYR9U9xq8/view?usp=sharing&usp=embed_facebook",
-    icon: <BsFillSuitcaseLgFill color="#3AD305" cursor="pointer" size={22} />,
+    icon: (
+      <BsFillSuitcaseLgFill
+        className="hover:animate-pulse hover:fill-quaternary hover:drop-shadow-quaternary-glow"
+        color="#3AD305"
+        cursor="pointer"
+        size={22}
+      />
+    ),
   },
 ];
 

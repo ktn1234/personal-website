@@ -16,7 +16,7 @@ function About(): JSX.Element {
         <h1 className="pt-10 text-5xl">Kevin Nguyen</h1>
         <p className="text-2xl pt-3">
           Software Engineer at{" "}
-          <span className="drop-shadow-tertiary-glow">
+          <span className="drop-shadow-tertiary-glow hover:underline hover:text-quaternary hover:animate-pulse">
             <a href="https://www.viasat.com/">Viasat</a>
           </span>
         </p>
@@ -32,25 +32,25 @@ function About(): JSX.Element {
           internet, and realized my passion for software development and
           automation. Since then, I have gotten the opportunity to build
           software for a{" "}
-          <span className="font-bold drop-shadow-tertiary-glow">
+          <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-tertiary hover:animate-pulse">
             <a target="_blank" href="https://www.q2.com/">
               fintech company
             </a>
           </span>
           , a{" "}
-          <span className="font-bold drop-shadow-tertiary-glow">
+          <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-tertiary hover:animate-pulse">
             <a target="_blank" href="https://www.getibble.com/">
               social media start-up
             </a>
           </span>
           , a{" "}
-          <span className="font-bold drop-shadow-tertiary-glow">
+          <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-tertiary hover:animate-pulse">
             <a target="_blank" href="https://bitsurf.network/">
               personal discovery engine startup
             </a>
           </span>
           , and a{" "}
-          <span className="font-bold drop-shadow-tertiary-glow">
+          <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-tertiary hover:animate-pulse">
             <a target="_blank" href="https://www.viasat.com/">
               satellite internet service provider
             </a>
