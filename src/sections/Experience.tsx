@@ -16,10 +16,10 @@ const jobs: Job[] = [
     time: "August 2021 - Present",
     description: [
       "Lead the development of a portal and an API for DDI (DNS, DHCP, and IPAM) services to provide a self-service interface for internal employees to manage their own domains and IP addresses",
-      "Assisted in the development of an internal ChatGPT chatbot and the backend services to help assist internal employees with their job tasks",
-      "Assisted with integrating DevOps practices into the development lifecycle, including automation for deployment of infrastructure resources, improving CI/CD pipelines, and providing support for internal employees",
       "Built an internal self-service client for Viasat's Configuration Management Database (CMDB) to provide a more efficient way to manage assets",
       "Optimized image pipelines that produced secure internal images for Viasat's infrastructure",
+      "Integrated DevOps practices into the development lifecycle, including automation for deployment of infrastructure resources, improving CI/CD pipelines, and providing support for internal employees",
+      "Assisted in the development of an internal ChatGPT chatbot and the backend services to help assist internal employees with their job tasks",
     ],
     link: "https://www.viasat.com/",
     technologies: [
@@ -49,9 +49,9 @@ const jobs: Job[] = [
     title: "Co-Founder Software Engineer",
     time: "May 2018 - August 2018",
     description: [
-      "Assisted with the development of Bitsurf's Discovery Engine",
+      "Led the development of Bitsurf's platform and the backend systems to support it - Authentication, OAuth2.0, API, Database, Email integration, Payment integration, SEO, Logging, Monitoring, Alerts, and Security",
       "Architected and maintained the infrastructure for Bitsurf's platform",
-      "Developed the web application for Bitsurf's platform and the backend services to support it",
+      "Assisted with the development of Bitsurf's Discovery Engine",
     ],
     link: "https://bitsurf.network/",
     technologies: [
