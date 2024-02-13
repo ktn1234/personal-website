@@ -70,6 +70,7 @@ const jobs: Job[] = [
       "Terraform",
       "AWS",
       "Heroku",
+      "Crypto",
     ],
   },
   {

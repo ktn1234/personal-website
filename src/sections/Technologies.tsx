@@ -30,6 +30,7 @@ const techDomains: TechDomain[] = [
       "REST",
       "GraphQL",
       "gRPC",
+      "Crypto",
     ],
   },
   {
