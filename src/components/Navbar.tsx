@@ -92,6 +92,7 @@ function NavbarDesktop(): JSX.Element {
                 <p className="pb-5 text-2xl drop-shadow-tertiary-glow animate-pulse cursor-pointer">
                   {"> kevdev"}
                 </p>
+
                 {links.map((link: Link, index: number) => (
                   <li
                     className="pb-5 hover:underline hover:drop-shadow-tertiary-glow hover:animate-pulse"
@@ -100,10 +101,8 @@ function NavbarDesktop(): JSX.Element {
                     <a href={link.url}>{link.title}</a>
                   </li>
                 ))}
+                <SocialLinks />
               </ul>
-            </div>
-            <div className="inline-block">
-              <SocialLinks />
             </div>
           </div>
         )}
