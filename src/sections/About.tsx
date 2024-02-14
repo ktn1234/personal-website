@@ -6,7 +6,7 @@ function About(): JSX.Element {
       <div>
         <div className="max-w-sm lg:max-w-max bg-secondary rounded-3xl ml-auto mr-auto md:ml-0 md:mr-0">
           <img
-            className="opacity-20 rounded-3xl"
+            className="opacity-70 rounded-3xl"
             src="images/me.jpg"
             alt="Kevin Nguyen"
           />
