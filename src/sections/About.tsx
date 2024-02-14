@@ -4,7 +4,7 @@ function About(): JSX.Element {
   return (
     <section id="about" className="lg:flex lg:items-center lg:justify-evenly">
       <div>
-        <div className="max-w-sm lg:max-w-max bg-secondary rounded-3xl">
+        <div className="max-w-sm lg:max-w-max bg-secondary rounded-3xl ml-auto mr-auto md:ml-0 md:mr-0">
           <img
             className="opacity-20 rounded-3xl"
             src="images/me.jpg"
@@ -13,7 +13,7 @@ function About(): JSX.Element {
         </div>
       </div>
       <div className="lg:pl-20">
-        <h1 className="pt-10 text-5xl">Kevin Nguyen</h1>
+        <h1 className="pt-5 text-5xl">Kevin Nguyen</h1>
         <p className="text-2xl pt-3">
           Software Engineer at{" "}
           <span className="drop-shadow-tertiary-glow hover:underline hover:text-quaternary hover:animate-pulse">

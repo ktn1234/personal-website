@@ -103,7 +103,9 @@ const jobs: Job[] = [
 function Experience(): JSX.Element {
   return (
     <section id="experience">
-      <h1 className="text-3xl drop-shadow-tertiary-glow">Experience</h1>
+      <h1 className="text-3xl drop-shadow-tertiary-glow text-center md:text-left">
+        Experience
+      </h1>
       <div>
         {jobs.map((job: Job, index: number) => (
           <div key={index} className="pt-5">
@@ -116,9 +118,9 @@ function Experience(): JSX.Element {
             <p className="text-quaternary">{job.time}</p>
             <ul className="pl-5 pt-3">
               {job.description.map((desc: string, index: number) => (
-                <li key={index} className="text-quaternary">
-                  {"▹ "}
-                  {desc}
+                <li key={index} className="flex text-quaternary">
+                  {"▹"}
+                  <span className="pl-2">{desc}</span>
                 </li>
               ))}
               <div className="pt-2 flex gap-2 flex-wrap">
