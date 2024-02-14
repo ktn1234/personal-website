@@ -3,16 +3,11 @@ import UIContainer from "./components/Container/UIContainer";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Technologies from "./sections/Technologies";
-// import Projects from "./sections/Projects";
+import Projects from "./sections/Projects";
 import Footer from "./components/Footer";
 
 function App() {
-  const pages = [
-    <About />,
-    <Experience />,
-    <Technologies />,
-    // <Projects />
-  ];
+  const pages = [<About />, <Experience />, <Projects />, <Technologies />];
 
   return (
     <>

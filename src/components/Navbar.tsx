@@ -40,10 +40,10 @@ function NavbarDesktop(): JSX.Element {
       title: "Experience",
       url: "#experience",
     },
-    // {
-    //   title: "Projects",
-    //   url: "#projects",
-    // },
+    {
+      title: "Projects",
+      url: "#projects",
+    },
     {
       title: "Technologies",
       url: "#technologies",
