@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import { TbCurrencySolana } from "react-icons/tb";
 import TextButton from "../components/TextButton";
 
 interface Project {
@@ -47,10 +48,12 @@ const projects: Project[] = [
   {
     title: "SPLIT",
     description:
-      "Blockchain web application game built off of Solana Blockchain. The rules are simple: Split or Steal. Based off of the prisoners' dilemma, players can choose to split or steal the pot. If both players choose to split, they split the pot. If one player chooses to steal, they take the entire pot. If both players choose to steal, they both lose the entire pot.",
+      "Blockchain web application game built off of Solana Blockchain during the Solana Online Hackathon 2021. The rules are simple: Split or Steal. Based off of the prisoners' dilemma, players can choose to split or steal the pot. If both players choose to split, they split the pot. If one player chooses to steal, they take the entire pot. If both players choose to steal, they both lose the entire pot.",
     date: "2021",
     image: "images/split/split-gameplay.png",
     alt: "Split Gameplay",
+    link: "https://airtable.com/apppQcPiwtx4wSDTy/shriNT26cAZeDJagn/tbl5fZ4E1BBbVAttW/viw6Iz13dIAGrgytn/recdxSmjpShRIhz8g", // Reference to the Solana Online Hackathon 2021 https://solana.com/news/announcing-winners-of-the-solana-season-hackathon
+    linkIcon: <TbCurrencySolana />,
     technologies: ["Solana", "Next.js", "Typescript", "Chakra UI", "Socket.io"],
   },
   {
@@ -91,7 +94,7 @@ function Projects() {
             className="block p-6 bg-primary border border-secondary rounded-lg shadow text-tertiary hover:drop-shadow-tertiary-glow"
             href={project.link}
           >
-            <div className="flex justify-between items-center mb-5">
+            <div className="flex justify-between items-center mb-5 text-lg">
               <p>{project.date}</p>
               {project.link && project.linkIcon && project.linkIcon}
             </div>
