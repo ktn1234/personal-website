@@ -74,6 +74,7 @@ const jobs: Job[] = [
       "Crypto",
       "Stripe",
       "Sendgrid",
+      "PWA",
     ],
   },
   {

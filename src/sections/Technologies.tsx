@@ -27,6 +27,7 @@ const techDomains: TechDomain[] = [
       "CSS",
       "TailwindCSS",
       "MaterialUI",
+      "PWA",
       "REST",
       "GraphQL",
       "gRPC",
