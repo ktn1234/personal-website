@@ -85,33 +85,33 @@ function Projects() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-5 gap-5">
         {projects.map((project: Project, index: number) => (
-          <div
+          <a
             key={index}
+            target="_blank"
             className="block p-6 bg-primary border border-secondary rounded-lg shadow text-tertiary hover:drop-shadow-tertiary-glow"
+            href={project.link}
           >
-            <a target="_blank" href={project.link}>
-              <div className="flex justify-between items-center mb-5">
-                <p>{project.date}</p>
-                {project.link && project.linkIcon && project.linkIcon}
+            <div className="flex justify-between items-center mb-5">
+              <p>{project.date}</p>
+              {project.link && project.linkIcon && project.linkIcon}
+            </div>
+            <img
+              className="rounded-lg h-48 w-full object-cover"
+              src={project.image}
+              alt={project.alt}
+            />
+            <div>
+              <h5 className="py-2 text-2xl font-bold tracking-tight text-center">
+                {project.title}
+              </h5>
+              <p className="text-quaternary">{project.description}</p>
+              <div className="pt-2 flex flex-wrap gap-2">
+                {project.technologies.map((tech: string, index: number) => (
+                  <TextButton key={index} text={tech} />
+                ))}
               </div>
-              <img
-                className="rounded-lg h-48 w-full object-cover"
-                src={project.image}
-                alt={project.alt}
-              />
-              <div>
-                <h5 className="py-2 text-2xl font-bold tracking-tight text-center">
-                  {project.title}
-                </h5>
-                <p className="text-quaternary">{project.description}</p>
-                <div className="pt-2 flex flex-wrap gap-2">
-                  {project.technologies.map((tech: string, index: number) => (
-                    <TextButton key={index} text={tech} />
-                  ))}
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         ))}
       </div>
     </section>
