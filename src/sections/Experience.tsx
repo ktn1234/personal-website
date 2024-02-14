@@ -51,7 +51,7 @@ const jobs: Job[] = [
     title: "Co-Founder Software Engineer",
     time: "December 2020 - Present",
     description: [
-      "Led the development of Bitsurf's platform and the backend systems to support it - Authentication, OAuth2.0, API, Database, Email integration, Payment integration, SEO, Logging, Monitoring, Alerts, and Security",
+      "Led the development of Bitsurf's platform and the backend systems to support it including authentication, OAuth2.0, API, database, email integration, payment integration, analytics, SEO, logging, monitoring, alerts, and security",
       "Architected and maintained the infrastructure for Bitsurf's platform",
       "Assisted with the development of Bitsurf's Discovery Engine",
     ],
@@ -70,7 +70,10 @@ const jobs: Job[] = [
       "Terraform",
       "AWS",
       "Heroku",
+      "Redis",
       "Crypto",
+      "Stripe",
+      "Sendgrid",
     ],
   },
   {
