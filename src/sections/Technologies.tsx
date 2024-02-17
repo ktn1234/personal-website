@@ -13,7 +13,9 @@ const techDomains: TechDomain[] = [
       "Python",
       "Shell",
       "Javascript",
+      "Java",
       "C++",
+      "C",
     ],
   },
   {
