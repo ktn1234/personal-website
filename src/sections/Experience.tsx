@@ -1,19 +1,24 @@
+import ExperienceTime from "../components/ExperienceTime";
 import TextButton from "../components/TextButton";
+import { uniqueTotalTimeString } from "../utils/time";
 
 interface Job {
   company: string;
   title: string;
-  time: string;
+  startTime: Date;
+  endTime: Date;
   description: string[];
   link: string;
   technologies: string[];
 }
 
+const today = new Date();
 const jobs: Job[] = [
   {
     company: "Viasat",
     title: "Software Engineer",
-    time: "August 2020 - Present",
+    startTime: new Date(2020, 7), // August 2020
+    endTime: today, // Present
     description: [
       "Lead the development of a portal and an API for DDI (DNS, DHCP, and IPAM) services to provide a self-service interface for internal employees to manage their own domains and IP addresses",
       "Built an internal self-service client for Viasat's Configuration Management Database (CMDB) to provide a more efficient way to manage assets",
@@ -49,7 +54,8 @@ const jobs: Job[] = [
   {
     company: "Bitsurf",
     title: "Co-Founder Software Engineer",
-    time: "December 2020 - Present",
+    startTime: new Date(2020, 11), // December 2020
+    endTime: today, // Present
     description: [
       "Led the development of Bitsurf's platform and the backend systems to support it including authentication, OAuth2.0, API, database, email integration, payment integration, analytics, SEO, logging, monitoring, alerts, and security",
       "Architected and maintained the infrastructure for Bitsurf's platform",
@@ -78,9 +84,10 @@ const jobs: Job[] = [
     ],
   },
   {
-    company: "Ibble",
+    company: "ibble",
     title: "Software Engineer Intern",
-    time: "Dec 2019 - July 2020",
+    startTime: new Date(2019, 11), // December 2019
+    endTime: new Date(2020, 7), // August 2020
     description: [
       "Built ibble's underlying push notification delivery service foundation to provide more user engagement with ibbl's mobile application",
       "Worked on reporting automation in order to get user statistics to further analyze how users were interacting with ibble's mobile application",
@@ -93,7 +100,8 @@ const jobs: Job[] = [
   {
     company: "Q2",
     title: "IT Intern",
-    time: "May 2019 - August 2019",
+    startTime: new Date(2019, 4), // May 2019
+    endTime: new Date(2019, 7), // August 2019
     description: [
       "Automated the provisioning process for new Windows machines, reducing the steps it took from 65 to 20 steps, with Powershell",
       "Automated the provisioning process for new Mac machines, reducing the steps it took from 37 to 14 steps, with shell scripting",
@@ -107,8 +115,16 @@ const jobs: Job[] = [
 function Experience(): JSX.Element {
   return (
     <section id="experience">
-      <h1 className="text-3xl drop-shadow-tertiary-glow text-center md:text-left">
-        Experience
+      <h1 className="flex flex-col md:flex-row md:items-center text-3xl drop-shadow-tertiary-glow text-center md:text-left">
+        <span>Experience</span>
+        <div className="md:ml-2 text-lg text-quaternary">
+          {`(${uniqueTotalTimeString(
+            jobs.map((job) => ({
+              startTime: job.startTime,
+              endTime: job.endTime,
+            }))
+          )} years)`}
+        </div>
       </h1>
       <div>
         {jobs.map((job: Job, index: number) => (
@@ -119,7 +135,7 @@ function Experience(): JSX.Element {
                 <a href={job.link}>{job.company}</a>
               </span>
             </h3>
-            <p className="text-quaternary">{job.time}</p>
+            <ExperienceTime startTime={job.startTime} endTime={job.endTime} />
             <ul className="pl-5 pt-3">
               {job.description.map((desc: string, index: number) => (
                 <li key={index} className="flex text-quaternary">
