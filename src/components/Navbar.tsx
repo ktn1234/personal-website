@@ -52,7 +52,7 @@ function NavbarDesktop(): JSX.Element {
 
   return (
     <header>
-      <nav className="px-5 pt-5 flex justify-between items-center">
+      <nav className="p-5 flex justify-between items-center">
         <div>
           <span className="cursor-pointer">
             <p className="text-xl inline drop-shadow-tertiary-glow animate-pulse">

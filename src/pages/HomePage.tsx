@@ -1,4 +1,4 @@
-import NavbarDesktop from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import UIContainer from "../components/Container/UIContainer";
 import Footer from "../components/Footer";
 
@@ -12,7 +12,7 @@ function HomePage() {
 
   return (
     <>
-      <NavbarDesktop />
+      <Navbar />
       <UIContainer>
         {sections.map((section, index) => (
           <div key={index}>
