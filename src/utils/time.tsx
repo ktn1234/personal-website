@@ -12,6 +12,8 @@ export function uniqueTotalTimeString(
 
   for (let i = 0; i < intervals.length; i++) {
     const { startTime, endTime } = intervals[i];
+
+    // First interval - interval is ALWAYS unique
     if (uniqueTime.length === 0) {
       uniqueTime.push({
         startTime: startTime,
@@ -21,6 +23,11 @@ export function uniqueTotalTimeString(
       continue;
     }
 
+    /**
+     * Unique interval conditions:
+     * 1. If the start time is greater than the last end time
+     * 2. If the start time is equal to the last end time
+     */
     const { endTime: uniqueEndTime } = uniqueTime[uniqueTime.length - 1];
     if (
       startTime > uniqueEndTime ||
@@ -34,9 +41,13 @@ export function uniqueTotalTimeString(
       continue;
     }
 
+    /**
+     * Unique interval conditions:
+     * 1. If the start time is less than the last end time AND the end time is greater than the last end time
+     */
     if (
       startTime < uniqueEndTime &&
-      endTime.getTime() !== uniqueEndTime.getTime()
+      endTime.getTime() > uniqueEndTime.getTime()
     ) {
       uniqueTime.push({
         startTime: uniqueEndTime,
@@ -45,12 +56,15 @@ export function uniqueTotalTimeString(
       });
       continue;
     }
+
+    // Getting here means the start time is less than the last end time and the end time is less than the last end time, so we skip this interval since it's not unique and it is an overlap
   }
 
   const totalTime = uniqueTime.reduce((acc, curr) => {
     return acc + curr.diff;
   }, 0);
   const totalYears = (totalTime / (1000 * 60 * 60 * 24 * 365)).toFixed(2);
+
   return totalYears;
 }
 
