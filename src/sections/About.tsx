@@ -2,7 +2,7 @@ import SocialLinks from "../components/SocialLinks";
 
 function About(): JSX.Element {
   return (
-    <section id="about" className="lg:flex lg:items-center lg:justify-evenly">
+    <div id="about" className="lg:flex lg:items-center lg:justify-evenly">
       <div className="flex justify-center">
         <div className="max-w-sm lg:max-w-max bg-secondary rounded-3xl ml-auto mr-auto md:ml-0 md:mr-0">
           <img
@@ -72,7 +72,7 @@ function About(): JSX.Element {
           language, or planning my next destination to travel to.
         </p>
       </div>
-    </section>
+    </div>
   );
 }
 

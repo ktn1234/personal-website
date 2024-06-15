@@ -48,7 +48,7 @@ const techDomains: TechDomain[] = [
 
 function Technologies(): JSX.Element {
   return (
-    <section id="technologies">
+    <div id="technologies">
       <h1 className="text-3xl text-center drop-shadow-tertiary-glow">
         Technologies
       </h1>
@@ -69,7 +69,7 @@ function Technologies(): JSX.Element {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -15,9 +15,9 @@ function HomePage() {
       <Navbar />
       <UIContainer>
         {sections.map((section, index) => (
-          <div key={index}>
-            <div className="mb-5">{section}</div>
-          </div>
+          <section key={index} className="mb-5">
+            {section}
+          </section>
         ))}
       </UIContainer>
       <Footer />

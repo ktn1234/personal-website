@@ -82,7 +82,7 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section id="projects">
+    <div id="projects">
       <h1 className="text-3xl drop-shadow-tertiary-glow text-center lg:text-left">
         Projects
       </h1>
@@ -117,7 +117,7 @@ function Projects() {
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 

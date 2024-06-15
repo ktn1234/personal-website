@@ -52,6 +52,12 @@ function NavbarDesktop(): JSX.Element {
 
   return (
     <header>
+      <a
+        className="fixed top-0 left-0 right-0 p-5 text-center bg-secondary -translate-y-full translate-x-0 focus:translate-y-0 focus:outline-primary"
+        href="#main"
+      >
+        Skip to main content
+      </a>
       <nav className="p-5 flex justify-between items-center">
         <div>
           <span className="cursor-pointer">

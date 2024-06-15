@@ -114,7 +114,7 @@ const jobs: Job[] = [
 
 function Experience(): JSX.Element {
   return (
-    <section id="experience">
+    <div id="experience">
       <h1 className="flex flex-col md:flex-row md:items-center text-3xl drop-shadow-tertiary-glow text-center md:text-left">
         <span>Experience</span>
         <div className="md:ml-2 text-lg text-quaternary">
@@ -154,7 +154,7 @@ function Experience(): JSX.Element {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 
