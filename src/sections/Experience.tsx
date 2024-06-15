@@ -55,7 +55,7 @@ const jobs: Job[] = [
     company: "Bitsurf",
     title: "Co-Founder Software Engineer",
     startTime: new Date(2020, 11), // December 2020
-    endTime: today, // Present
+    endTime: new Date(2023, 7), // August
     description: [
       "Led the development of Bitsurf's platform and the backend systems to support it including authentication, OAuth2.0, API, database, email integration, payment integration, analytics, SEO, logging, monitoring, alerts, and security",
       "Architected and maintained the infrastructure for Bitsurf's platform",
@@ -85,7 +85,7 @@ const jobs: Job[] = [
   },
   {
     company: "ibble",
-    title: "Software Engineer Intern",
+    title: "Software Engineer Co-Op",
     startTime: new Date(2019, 11), // December 2019
     endTime: new Date(2020, 7), // August 2020
     description: [
