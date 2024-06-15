@@ -55,7 +55,7 @@ function Technologies(): JSX.Element {
       <div className="flex flex-wrap justify-between pt-5">
         {techDomains.map((techDomain: TechDomain, index: number) => (
           <div key={index} className="mb-5">
-            <h3 className="font-bold text-center">{techDomain.name}</h3>
+            <h2 className="font-bold text-center">{techDomain.name}</h2>
             {techDomain.tech.map((t: string, index: number) => (
               <div key={index}>
                 <ul>

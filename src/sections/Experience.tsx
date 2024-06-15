@@ -129,12 +129,12 @@ function Experience(): JSX.Element {
       <div>
         {jobs.map((job: Job, index: number) => (
           <div key={index} className="pt-5">
-            <h3 className="text-2xl">
+            <h1 className="text-2xl">
               {job.title} at{" "}
               <span className="font-bold drop-shadow-tertiary-glow hover:underline hover:text-quaternary hover:animate-pulse">
                 <a href={job.link}>{job.company}</a>
               </span>
-            </h3>
+            </h1>
             <ExperienceTime startTime={job.startTime} endTime={job.endTime} />
             <ul className="pl-5 pt-3">
               {job.description.map((desc: string, index: number) => (
@@ -143,13 +143,13 @@ function Experience(): JSX.Element {
                   <span className="pl-2">{desc}</span>
                 </li>
               ))}
-              <div className="pt-2 flex gap-2 flex-wrap">
-                {job.technologies.map((tech: string, index: number) => (
-                  <li key={index}>
-                    <TextButton text={tech} />
-                  </li>
-                ))}
-              </div>
+            </ul>
+            <ul className="pt-2 flex gap-2 flex-wrap">
+              {job.technologies.map((tech: string, index: number) => (
+                <li key={index}>
+                  <TextButton text={tech} />
+                </li>
+              ))}
             </ul>
           </div>
         ))}

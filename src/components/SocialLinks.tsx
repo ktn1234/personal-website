@@ -4,6 +4,7 @@ import { BsFillSuitcaseLgFill } from "react-icons/bs";
 
 interface SocialLink {
   title: string;
+  ariaLabel: string;
   url: string;
   icon: JSX.Element;
 }
@@ -12,6 +13,7 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     title: "Github",
+    ariaLabel: "Github",
     url: "https://github.com/ktn1234",
     icon: (
       <FaGithub
@@ -24,6 +26,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     title: "LinkedIn",
+    ariaLabel: "LinkedIn",
     url: "https://www.linkedin.com/in/kevinnguyen1234/",
     icon: (
       <FaLinkedinIn
@@ -36,6 +39,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     title: "Email",
+    ariaLabel: "Email",
     url: "mailto:ktn1234@yahoo.com",
     icon: (
       <HiOutlineMail
@@ -48,6 +52,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     title: "Resume",
+    ariaLabel: "Resume",
     url: "https://drive.google.com/file/d/1qRxhm3iu8-s4G1b3-USHA8lGYR9U9xq8/view?usp=sharing&usp=embed_facebook",
     icon: (
       <BsFillSuitcaseLgFill
@@ -62,14 +67,14 @@ const socialLinks: SocialLink[] = [
 
 function SocialLinks(): JSX.Element {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center gap-5">
       {socialLinks.map((link: SocialLink, index: number) => (
         <a
           key={index}
           href={link.url}
           target="_blank"
           rel="noreferrer"
-          className="pr-5"
+          aria-label={link.ariaLabel}
         >
           {link.icon}
         </a>

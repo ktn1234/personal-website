@@ -104,9 +104,9 @@ function Projects() {
               alt={project.alt}
             />
             <div>
-              <h5 className="py-2 text-2xl font-bold tracking-tight text-center">
+              <h2 className="py-2 text-2xl font-bold tracking-tight text-center">
                 {project.title}
-              </h5>
+              </h2>
               <p className="text-quaternary">{project.description}</p>
               <div className="pt-2 flex flex-wrap gap-2">
                 {project.technologies.map((tech: string, index: number) => (
